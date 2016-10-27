@@ -1,0 +1,300 @@
+/*
+Theme Name: Theology Express
+Theme URI: http://theologyexpress.com/
+Author: @noahgrubb
+Template: storefront
+Description: Storefront Child Theme for Theology Express.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: theology-express
+*/
+body {
+	font-size: 18px;
+}
+
+#main {
+	padding-top: 0;
+}
+
+.page-content {
+	padding: 2.5em;
+}
+
+.recent-titles {
+	overflow: hidden;
+	padding: 2.5em;
+}
+
+.site-header-cart .cart-contents {
+	padding: 0 !important;
+}
+
+.site__navigation {
+	background-color: #222325;
+	color: white;
+	height: 80px;
+}
+#site-logo {
+	float: left;
+	margin-left: 50px;
+}
+.site__navigation nav {
+	display: inline-block;
+}
+#menu-primary {
+	list-style: none;
+	padding: 25px 0;
+	margin-right: 50px;
+}
+#menu-primary li {
+	float: left;
+	margin-right: 20px;
+}
+
+/**
+ * Masthead
+ */
+
+.masthead {
+}
+
+	.masthead--slideshow{
+		width:100%;
+		position: relative;
+    	z-index: 100;
+	}
+
+	.masthead--slideshow .container{
+		padding:0;
+		text-align:center;
+	}
+
+	/**
+	 * Homepage Slider
+	 */
+
+	.masthead--slideshow{
+	}
+
+	.masthead--slideshow .container{
+		position:relative;
+
+	}
+
+	.slick-slider{
+
+	}
+
+	.slick-slider img{
+		display:block;
+		max-height: 559px;
+		width: 100%;
+	}
+
+
+
+
+	@media(max-width: 414px){
+    	.sliderBullets, .slick-dots { display: none !important; }
+	}
+
+	/* -- slider content -- */
+	.item__info {
+		position: absolute;
+		top: 135px;
+		text-align: center;
+		font-size: 20px;
+		color: white;
+		width: 100%;
+	}
+
+	.item__info h2{
+		margin: 0 auto;
+		font-size: 60px;
+		font-weight: 400;
+		color: white !important;
+	}
+	.item__info h3{
+		font-size: 25px;
+		color: white;
+		margin-bottom: 0px;
+	}
+
+	.item__info .button{
+		margin: 10px 0 20px;
+		display: inline-block;
+		font-size: 18px;
+	}
+
+	@media(max-width: 1200px) {
+
+		.item__info h2 {
+			font-size:70px;
+			font-weight:400;
+			line-height:73px;
+		}
+
+		.item__info {
+			font-size: 16px;
+		}
+
+		.item__info .button {
+	    	margin: 25px 0 20px;
+		}
+	}
+
+
+	@media(max-width: 1024px){
+
+		.item__info h2{
+			font-size:48px;
+			line-height:48px;
+		}
+
+		.item__info .button{
+			margin:15px 0 10px;
+
+		}
+
+		.page__header { top: 0px;}
+
+	}
+
+	@media(max-width: 768px){
+
+		.item__info h2{
+			font-size: 56px;
+	    	line-height: 54px;
+		}
+
+		.item__info {
+			font-size: 15px;
+	    	line-height: 22px;
+		}
+
+	}
+
+	@media(max-width: 603px){
+
+		.item__info h2{
+			font-size:38px;
+			line-height:36px;
+		}
+
+		.item__info .button{
+			margin:10px 0 5px;
+			padding:8px 12px;
+		}
+
+		.sliderContent img {
+			 max-width:100%;
+		}
+
+	}
+
+
+
+	@media(max-width: 414px){
+
+		.item__info h2{
+			font-size:22px;
+			line-height:30px;
+		}
+
+		.item__info .button{
+			margin:5px 0 0;
+			padding:5px 10px;
+			border-radius:8px;
+			line-height:18px;
+		}
+
+	}
+
+	@media(max-width: 320px) {
+
+    	.item__info--title p {
+      		display: none;
+    	}
+
+	}
+
+.woocommerce-account .hentry .entry-header {
+	height: 100px;
+}
+
+/*
+ * Breadcrumbs & Links
+ */
+
+nav.woocommerce-breadcrumb {
+		color: #DAB21E;
+    margin-left: auto;
+    margin-right: auto;
+		text-align: center;
+	  padding: 15px;
+}
+nav.woocommerce-breadcrumb a { color: #7E8188; }
+nav.woocommerce-breadcrumb a:hover { color: #576686; }
+
+a {
+    color: #576686;
+    font-weight: 600;
+}
+
+/*
+ * Product Display
+ */
+.woocommerce .content-area { width: 100%; }
+
+#product-download-links {
+	clear: both;
+	border-top: 5px solid #222325;
+    padding-top: 20px;
+    overflow: auto;
+    margin-bottom: 100px;
+}
+a.product-download { width: 100%; }
+
+
+
+.recent-slider2 .slick-slide {
+	max-height: 400px;
+	overflow: hidden;
+}
+
+
+.orderby option[value="price"],
+.orderby option[value="price-desc"],
+.orderby option[value="rating"],
+.orderby option[value="popularity"]
+{
+   display: none;
+}
+
+
+/*
+ * Checkout Styles
+ */
+#order_review_heading, #order_review {
+    border-color: #484C51;
+}
+input[type="submit"].alt { background-color: #DBB425; }
+input[type="submit"].alt:hover { background-color: #F1DF7B; }
+label { font-weight: 400; }
+
+
+/*
+ * Footer
+ */
+
+.footer-widgets { padding: 10px 0;}
+#menu-footer-menu li {
+	width: 50%;
+    display: inline;
+    float: left;
+}
+
+.site-footer a:not(.button) { color: #576686; }
+/* set html background color to footer color for short height pages */
+html { background-color: #F3F3F3; }
